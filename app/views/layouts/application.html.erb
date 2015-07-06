@@ -11,7 +11,7 @@
 </head>
 <body>
 	<header id="main_navigation" class="clearfix">
-		<a href="#" class="name">Dave Grant</a>
+		<%= link_to "Dave Grant", root_path, class: "name" %>
 		<nav>
 			<%= link_to "Articles", posts_path %>
 			<a href="projects.html">Projects</a>
@@ -20,7 +20,16 @@
 		
 	</header>
 
-<%= yield %>
+	<%= yield %>
+
+	<footer id= "main-footer">
+		<p class="copyright">&copy; 2015 Dave Grant</p>
+		<nav>
+			<a href="https://twitter.com/davegrant23" target="_blank"> <i class="fa fa-twitter"></i></a>
+			<a href="http://github.com/shutdown23" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="#"><i class="fa fa-linkedin" target="_blank"></i></a>
+		</nav>
+	</footer>
 
 </body>
 </html>
